@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import MainComponent from './TableComponent'; //contains the table-pagination component which have data
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div style={{marginBottom: '20px'}}>
+        <img src='https://rmkcdn.successfactors.com/d6383ce6/92e3b586-57c7-4f17-8570-9.png' alt='Metlife-logo'></img>
+      </div>
+      <div className='blue-box'>
+        <div className='jobs-div'>Jobs</div>
+      </div>
+      <MainComponent />
     </div>
-  );
+  )
 }
 
 export default App;
